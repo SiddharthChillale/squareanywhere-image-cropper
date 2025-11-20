@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="photo1Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="photo2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Back Polaroid photo (rotated slightly left) -->
+  <g transform="rotate(-8 50 50)">
+    <!-- White border -->
+    <rect x="20" y="25" width="45" height="54" rx="2" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+    <!-- Photo area -->
+    <rect x="24" y="29" width="37" height="37" fill="url(#photo1Gradient)"/>
+    <!-- Bottom white space (characteristic of Polaroid) -->
+    <rect x="24" y="66" width="37" height="9" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Front Polaroid photo (rotated slightly right) -->
+  <g transform="rotate(12 50 50)">
+    <!-- White border -->
+    <rect x="35" y="21" width="45" height="54" rx="2" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+    <!-- Photo area -->
+    <rect x="39" y="25" width="37" height="37" fill="url(#photo2Gradient)"/>
+    <!-- Bottom white space -->
+    <rect x="39" y="62" width="37" height="9" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Dotted cut line going diagonally across -->
+  <line x1="10" y1="45" x2="90" y2="55" 
+        stroke="#EF4444" 
+        stroke-width="2" 
+        stroke-dasharray="3,3" 
+        stroke-linecap="round"/>
+  
+  <!-- Small scissors icon at the start of the cut line -->
+  <g transform="translate(8, 43) scale(0.8)">
+    <path d="M2,0 L4,2 L2,4 M4,2 L8,2" 
+          stroke="#EF4444" 
+          stroke-width="1.5" 
+          fill="none" 
+          stroke-linecap="round"/>
+    <circle cx="1" cy="1" r="1.5" fill="none" stroke="#EF4444" stroke-width="1"/>
+    <circle cx="1" cy="3" r="1.5" fill="none" stroke="#EF4444" stroke-width="1"/>
+  </g>
+</svg>
